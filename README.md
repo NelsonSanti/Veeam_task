@@ -50,7 +50,8 @@ By the end of this task, the following output is expected:
 
 Once the syncronization must be one-way, the `veeam_task.py` was not executed yet, otherwise, folders and files from **copyfolder** would be erased and replaced, and it would not be possible to test it again. Nevertheless, the program was already tested previously with another files.
 
-To run the program please open the terminal, choose a directory to host the `Veeam_test` directory, and take the following steps:
+To run the program please fork this remote repository, open the terminal, and choose a local directory to clone it.
+Then, navigate to the cloned repository, and take the following steps:
 
 * Call the used programming language:
   * Example: `$ python` in this case
