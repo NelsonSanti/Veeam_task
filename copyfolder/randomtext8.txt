@@ -1,0 +1,1 @@
+Os temas e estilos também contribuem para manter o seu documento coordenado. Quando clica em Estrutura e escolhe um novo Tema, as imagens, gráficos e gráficos SmartArt são alterados para que combinem com o seu novo tema. Quando aplica estilos, os seus títulos alteram-se para combinar com o novo tema.
