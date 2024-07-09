@@ -7,6 +7,7 @@ import signal
 import time
 import numpy
 import requests
+import pytest
 
 # Logger definition and configuration to record messages either in console and in a file
 
