@@ -5,7 +5,7 @@ import sys
 import logging
 import signal
 import time
-from Veeam_source import register_setup, sync_folders, signal_handler, main
+from Veeam_task import register_setup, sync_folders, signal_handler, main
 
 @pytest.fixture
 def source_folder(tmp_path):
@@ -52,7 +52,7 @@ def test_main(monkeypatch, tmp_path):
     args = [str(source_folder), str(replica_folder), str(interval), str(log_file)]
     monkeypatch.setattr(sys, 'argv', ['Veeam_task.py'] + args)
     
-    from Veeam_source import main
+    from Veeam_task import main
     import threading
 
     def run_main():
