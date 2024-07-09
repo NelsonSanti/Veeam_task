@@ -8,6 +8,41 @@ import time
 import numpy
 import requests
 import pytest
+from unittest.mock import patch
+
+#Fixtures
+
+@pytest.fixture # decorator to define a fixture
+def log_file(tmp_path): # fixture to create a temporary log file
+    log_file_path = tmp_path / 'log.txt' # creates a path to the temporary log file
+    log_file_path.write_text('Log content') # creates the temporary log file
+    return log_file_path # returns the path to the temporary log file
+
+@pytest.fixture # decorator to define a fixture
+def source_folder(tmp_path): # fixture to create a temporary source folder
+    source_folder_path = tmp_path / 'source_folder' # creates a path to the temporary source folder
+    source_folder_path.mkdir() # creates the temporary source folder
+    #adds a file to the source folder if needed
+    return source_folder_path # returns the path to the temporary source folder
+
+@pytest.fixture # decorator to define a fixture
+def replica_folder(tmp_path): # fixture to create a temporary replica folder
+    replica_folder_path = tmp_path / 'replica_folder' # creates a path to the temporary replica folder
+    replica_folder_path.mkdir() # creates the temporary replica folder
+    #adds a file to the replica folder if needed
+    return replica_folder_path # returns the path to the temporary replica folder
+
+@pytest.fixture # decorator to define a fixture
+def logger(): # fixture to create a logger object
+    logger = logging.getLogger('Veeam_logger') # creates a logger object
+    logger.setLevel(logging.INFO) # sets the level of the logger to INFO
+    return logger # returns the logger object
+
+@pytest.fixture # decorator to define a fixture
+def sig():
+    return signal.SIGTERM # returns the signal SIGTERM, meaning that the signal is a termination signal
+
+#Updating tests to use fixtures
 
 # Logger definition and configuration to record messages either in console and in a file
 
@@ -33,7 +68,8 @@ def test_register_setup(log_file):
     logger.addHandler(console_handler) # Adds the consoleHandler to the logger. Meaning, it will associate the consoleHandler to the logger. Now, every messages logged by the logger will be printed in the console.
     logger.addHandler(file_handler) # Adds the filehandler to the logger. Meaning, it will associate the filehandler to the logger. Now, every messages logged by the logger will be written in the file.
 
-    return logger
+    assert log_file.exists() # Asserts that the log file exists. If it does not exist, the test will fail.
+    #return logger
 
 # function for folder synchronization
 
@@ -106,40 +142,62 @@ def test_sync_folders(source_folder, replica_folder, logger): # function that re
 
 # function to handle the signal
 
-def test_signal_handler(sig, frame): # function that receives the signal and frame as parameters
+def test_signal_handler(sig): # function that receives the signal as parameter
     # signal handler to stop the script by pressing Ctrl+C
     logger = logging.getLogger('Veeam_logger') # gets the logger object. It was inside another function previously, so it needs to be called again.
     logger.info("Received signal to stop the script.") # logs the message that the signal to stop the script was received.
-    sys.exit(0) # exits the script with status code 0.
+    assert sig == signal.SIGTERM # asserts that the signal is equal to SIGTERM. If it is not, the test will fail.
+    #sys.exit(0) # exits the script with status code 0.
+
+def test_main(): # test the main function and its arguments.
+    test_args = ["program_name", "source_folder", "replica_folder", "15", "log_file"] # creates a list of arguments to test the main function
+    with patch.object(sys, 'argv', test_args): # patches the sys module and the argv attribute with the test arguments
+        main() # calls the main function
 
 # main function to configure arguments and start the synchronization process
-
-def test_main(): # main function
-    # main function to synchronize folders periodically
-    parser = argparse.ArgumentParser(description='This synchronizes folders periodically') # creates an ArgumentParser object to parse the arguments passed to the script. The description argument is used to define the description of the script.
-    parser.add_argument('source_folder', type=str, help='Source folder to synchronize with replica folder') # adds an argument to the parser. The source_folder argument is the source folder to synchronize with the replica folder. The type argument is used to define the type of the argument. The help argument is used to define the help message of the argument.
-    parser.add_argument('replica_folder', type=str, help='Replica folder to be synchronized with source folder') # adds an argument to the parser. The replica_folder argument is the replica folder to be synchronized with the source folder. The type argument is used to define the type of the argument. The help argument is used to define the help message of the argument.
-    parser.add_argument('interval', type=int, help='Interval time in seconds for synchronization') # adds an argument to the parser. The interval argument is the interval time in seconds for synchronization. The type argument is used to define the type of the argument. The help argument is used to define the help message of the argument.
-    parser.add_argument('log_file', type=str, help='Log file to record the synchronization') # adds an argument to the parser. The log_file argument is the log file to record the synchronization. The type argument is used to define the type of the argument. The help argument is used to define the help message of the argument.
-    args = parser.parse_args() # parses the arguments passed to the script and stores them in the args variable.
-
-    # Checking if the source folder exists and creating the replica folder if it does not exist
-    if not os.path.exists(args.source_folder): # checks if the source folder does not exist
-        print(f"Source folder {args.source_folder} does not exist.") # prints the message that the source folder does not exist
-        sys.exit(1) # exits the script with status code 1.
-    if not os.path.exists(args.replica_folder): # checks if the replica folder does not exist
-        os.makedirs(args.replica_folder) # creates the replica folder
-        print(f"Created replica folder {args.replica_folder}.") # prints the message that the replica folder was created
-
-    logger = test_register_setup(args.log_file) # Sets up the logger. creates a logger object by calling the register_setup function passing the log file as argument
-    signal.signal(signal.SIGINT, test_signal_handler) # sets a handler for the SIGINT (signal interruption) signal. When the signal is received, the signal_handler function is called.
-
-    while True: # loops indefinitely. Untill we say to stop the script by sending a signal, using the keyboard shortcut Ctrl+C in the terminal.
-        test_sync_folders(args.source_folder, args.replica_folder, logger) # calls the sync_folders function passing the source folder, replica folder and logger as arguments
-        time.sleep(args.interval) # sleeps the script for the interval time. The interval time is passed as an argument to the script and defined by the user. In the terminal in this case.
-
 if __name__ == '__main__': # checks if the script is being executed as the main program
-    test_main() # calls the main function that makes everything work
+    def main(): # main function
+        # main function to synchronize folders periodically
+        parser = argparse.ArgumentParser(description='This synchronizes folders periodically') # creates an ArgumentParser object to parse the arguments passed to the script. The description argument is used to define the description of the script.
+        parser.add_argument('source_folder', type=str, help='Source folder to synchronize with replica folder') # adds an argument to the parser. The source_folder argument is the source folder to synchronize with the replica folder. The type argument is used to define the type of the argument. The help argument is used to define the help message of the argument.
+        parser.add_argument('replica_folder', type=str, help='Replica folder to be synchronized with source folder') # adds an argument to the parser. The replica_folder argument is the replica folder to be synchronized with the source folder. The type argument is used to define the type of the argument. The help argument is used to define the help message of the argument.
+        parser.add_argument('interval', type=int, help='Interval time in seconds for synchronization') # adds an argument to the parser. The interval argument is the interval time in seconds for synchronization. The type argument is used to define the type of the argument. The help argument is used to define the help message of the argument.
+        parser.add_argument('log_file', type=str, help='Log file to record the synchronization') # adds an argument to the parser. The log_file argument is the log file to record the synchronization. The type argument is used to define the type of the argument. The help argument is used to define the help message of the argument.
+        args = parser.parse_args() # parses the arguments passed to the script and stores them in the args variable.
+        
+        # Checking if the source folder exists and creating the replica folder if it does not exist
+        if not os.path.exists(args.source_folder): # checks if the source folder does not exist
+            print(f"Source folder {args.source_folder} does not exist.") # prints the message that the source folder does not exist
+            sys.exit(1) # exits the script with status code 1.
+        if not os.path.exists(args.replica_folder): # checks if the replica folder does not exist
+            os.makedirs(args.replica_folder) # creates the replica folder
+            print(f"Created replica folder {args.replica_folder}.") # prints the message that the replica folder was created
+            
+        logger = logging.getLogger('Veeam_logger') # creates a logger object
+        logger.setLevel(logging.INFO) # sets the level of the logger to INFO can only log messages of this level or higher.
+        console_handler = logging.StreamHandler(sys.stdout) # creates a StreamHandler which log  pattern messages (sys.stdout) to console where the scritp is being executed.
+        file_handler = logging.FileHandler(args.log_file) # creates a FileHandler to log messages into a specific file. The path of the file is defined by the log_file argument.
+        console_handler.setLevel(logging.INFO) # sets the level of the consoleHandler to INFO. Can only log messages of this level or higher.
+        file_handler.setLevel(logging.INFO) # sets the level of the fileHandler to INFO. Can only log messages of this level or higher.
+    
+        formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s') # creates a formatter object to define the format of the messages that will be logged.
+        console_handler.setFormatter(formatter) # sets the formatter to the consoleHandler.
+        file_handler.setFormatter(formatter)
+
+        logger.addHandler(console_handler) # adds the consoleHandler to the logger.
+        logger.addHandler(file_handler) # adds the fileHandler to the logger.
+
+        signal.signal(signal.SIGINT, lambda sig, frame: sys.exit(0)) # registers the signal handler to stop the script by pressing Ctrl+C
+
+        while True: # loops indefinitely. Untill we say to stop the script by sending a signal, using the keyboard shortcut Ctrl+C in the terminal.
+            try:
+                test_sync_folders(args.source_folder, args.replica_folder, logger) # calls the sync_folders function passing the source folder, replica folder and logger as arguments
+                time.sleep(args.interval) # sleeps the script for the interval time. The interval time is passed as an argument to the script and defined by the user. In the terminal in this case.
+            except Exception as e: # catches an exception if the script cannot synchronize the folders
+                logger.error(f"Error synchronizing folders: {e}")
+
+
+    main() # calls the main function that makes everything work
 
 
 
