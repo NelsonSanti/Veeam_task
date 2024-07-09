@@ -10,7 +10,7 @@ The aim is to maintain a *full*, *identical* copy of the **source folder** in th
 * The file **creation**/**copying**/**removal** operations should be logged to a file (`synchronized.log` in this exercise) and the console output;
 * **Folder paths**, **synchronization interval**, and **log file path**, should be provided using the command line arguments;
 * It is undesirable to use third-party libraries that implement folder synchronization;
-* It is allowed (and recommended) to use external libraries implementing other well-known algorithms. For example, there is no point in implementing yet another function that calculates MD5 if it is needed for the task - it is perfectly acceptable to use a third-party (or built-in) library;
+* Using external libraries implementing other well-known algorithms is allowed (and recommended). For example, there is no point in implementing yet another function that calculates MD5 if it is needed for the task - it is perfectly acceptable to use a third-party (or built-in) library;
 * The solution should be presented in the form of a link to the public GitHub repository.
 
 > [!IMPORTANT]
@@ -48,10 +48,10 @@ By the end of this task, the following output is expected:
 
 ## How to execute the script?
 
-Once the syncronization must be one-way, the `veeam_task.py` was not executed yet, otherwise, folders and files from **copyfolder** would be erased and replaced, and it would not be possible to test it again. Nevertheless, the program was already tested previously with another files.
+Once the synchronization must be one-way, the `veeam_task.py` was not executed yet, otherwise, folders and files from **copyfolder** would be erased and replaced, and it would not be possible to test it again. Nevertheless, the program had already passed the **automated tests with GitHub Actions** previously with other files. The test files were also added to this repository.
 
 To run the program please fork this remote repository, open the terminal, and choose a local directory to clone it.
-Then, navigate to the cloned repository, and take the following steps:
+Then, navigate to the cloned repository, and taking into account the files inside the `Veeam_source` directory, take the following steps:
 
 * Call the used programming language:
   * Example: `$ python` in this case
@@ -71,7 +71,7 @@ Typing all in the same line, the whole combination should be something like this
 `$ python "C:\Users\Nelso\PycharmProjects\Veeam_test\veeam_task.py" "C:\Users\Nelso\PycharmProjects\Veeam_test\mainfolder" "C:\Users\Nelso\PycharmProjects\Veeam_test\copyfolder" 15 "C:\Users\Nelso\PycharmProjects\Veeam_test\synchronized.log"`
 
 > [!NOTE]
-> The program is ready to create both the folders and the log file if they do not exist.
+> The program is ready to create the folders and the log file if they do not exist.
 
 ## License
 
