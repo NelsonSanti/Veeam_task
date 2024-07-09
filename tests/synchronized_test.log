@@ -1,0 +1,110 @@
+2024-06-29 16:16:33,947 - Veeam_logger - INFO - Removing file C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest\random8.txt
+2024-06-29 16:16:33,947 - Veeam_logger - INFO - Removing file C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest\randomtext1.txt
+2024-06-29 16:16:33,947 - Veeam_logger - INFO - Removing file C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest\randomtext2.txt
+2024-06-29 16:16:33,958 - Veeam_logger - INFO - Removing file C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest\randomtext3.txt
+2024-06-29 16:16:33,958 - Veeam_logger - INFO - Removing file C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest\randomtext4.txt
+2024-06-29 16:16:33,960 - Veeam_logger - INFO - Removing file C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest\randomtext5.txt
+2024-06-29 16:16:33,961 - Veeam_logger - INFO - Removing file C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest\randomtext6.txt
+2024-06-29 16:16:33,961 - Veeam_logger - INFO - Removing file C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest\randomtext7.txt
+2024-06-29 16:16:33,963 - Veeam_logger - INFO - Removing file C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest\randomtext8.txt
+2024-06-29 16:16:33,964 - Veeam_logger - INFO - Removing directory C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest\subfolder1
+2024-06-29 16:16:33,965 - Veeam_logger - INFO - Removing directory C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest\subfolder2
+2024-06-29 16:16:33,966 - Veeam_logger - INFO - Removing directory C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest\subfolder3
+2024-06-29 16:16:33,967 - Veeam_logger - INFO - Removing directory C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest\subfolder4
+2024-06-29 16:16:33,967 - Veeam_logger - INFO - Removed files and directories from C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest that are not in the source folder.
+2024-06-29 16:16:33,969 - Veeam_logger - INFO - Creating directory C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest\.\continentsfolder
+2024-06-29 16:16:33,970 - Veeam_logger - INFO - Creating directory C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest\.\oceansfolder
+2024-06-29 16:16:33,971 - Veeam_logger - INFO - Creating directory C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest\.\planetsfolder
+2024-06-29 16:16:33,974 - Veeam_logger - INFO - Copying file C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\mainfolderTest\continentsfolder\continents.txt to C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest\continentsfolder\continents.txt
+2024-06-29 16:16:33,977 - Veeam_logger - INFO - Copying file C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\mainfolderTest\oceansfolder\oceans.txt to C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest\oceansfolder\oceans.txt
+2024-06-29 16:16:33,979 - Veeam_logger - INFO - Copying file C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\mainfolderTest\planetsfolder\planets.txt to C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest\planetsfolder\planets.txt
+2024-06-29 16:16:33,979 - Veeam_logger - INFO - Synchronized C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\mainfolderTest with C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest.
+2024-06-29 16:16:48,986 - Veeam_logger - INFO - Removing directory C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest\continentsfolder
+2024-06-29 16:16:48,992 - Veeam_logger - INFO - Removing directory C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest\oceansfolder
+2024-06-29 16:16:48,997 - Veeam_logger - INFO - Removing directory C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest\planetsfolder
+2024-06-29 16:16:48,999 - Veeam_logger - INFO - Removed files and directories from C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest that are not in the source folder.
+2024-06-29 16:16:49,001 - Veeam_logger - INFO - Creating directory C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest\.\continentsfolder
+2024-06-29 16:16:49,003 - Veeam_logger - INFO - Creating directory C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest\.\oceansfolder
+2024-06-29 16:16:49,005 - Veeam_logger - INFO - Creating directory C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest\.\planetsfolder
+2024-06-29 16:16:49,008 - Veeam_logger - INFO - Copying file C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\mainfolderTest\continentsfolder\continents.txt to C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest\continentsfolder\continents.txt
+2024-06-29 16:16:49,012 - Veeam_logger - INFO - Copying file C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\mainfolderTest\oceansfolder\oceans.txt to C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest\oceansfolder\oceans.txt
+2024-06-29 16:16:49,015 - Veeam_logger - INFO - Copying file C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\mainfolderTest\planetsfolder\planets.txt to C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest\planetsfolder\planets.txt
+2024-06-29 16:16:49,016 - Veeam_logger - INFO - Synchronized C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\mainfolderTest with C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest.
+2024-06-29 16:17:04,017 - Veeam_logger - INFO - Removing directory C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest\continentsfolder
+2024-06-29 16:17:04,029 - Veeam_logger - INFO - Removing directory C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest\oceansfolder
+2024-06-29 16:17:04,030 - Veeam_logger - INFO - Removing directory C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest\planetsfolder
+2024-06-29 16:17:04,030 - Veeam_logger - INFO - Removed files and directories from C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest that are not in the source folder.
+2024-06-29 16:17:04,041 - Veeam_logger - INFO - Creating directory C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest\.\continentsfolder
+2024-06-29 16:17:04,044 - Veeam_logger - INFO - Creating directory C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest\.\oceansfolder
+2024-06-29 16:17:04,046 - Veeam_logger - INFO - Creating directory C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest\.\planetsfolder
+2024-06-29 16:17:04,049 - Veeam_logger - INFO - Copying file C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\mainfolderTest\continentsfolder\continents.txt to C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest\continentsfolder\continents.txt
+2024-06-29 16:17:04,053 - Veeam_logger - INFO - Copying file C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\mainfolderTest\oceansfolder\oceans.txt to C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest\oceansfolder\oceans.txt
+2024-06-29 16:17:04,056 - Veeam_logger - INFO - Copying file C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\mainfolderTest\planetsfolder\planets.txt to C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest\planetsfolder\planets.txt
+2024-06-29 16:17:04,057 - Veeam_logger - INFO - Synchronized C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\mainfolderTest with C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest.
+2024-06-29 16:17:19,062 - Veeam_logger - INFO - Removing directory C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest\continentsfolder
+2024-06-29 16:17:19,065 - Veeam_logger - INFO - Removing directory C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest\oceansfolder
+2024-06-29 16:17:19,065 - Veeam_logger - INFO - Removing directory C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest\planetsfolder
+2024-06-29 16:17:19,065 - Veeam_logger - INFO - Removed files and directories from C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest that are not in the source folder.
+2024-06-29 16:17:19,065 - Veeam_logger - INFO - Creating directory C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest\.\continentsfolder
+2024-06-29 16:17:19,065 - Veeam_logger - INFO - Creating directory C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest\.\oceansfolder
+2024-06-29 16:17:19,073 - Veeam_logger - INFO - Creating directory C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest\.\planetsfolder
+2024-06-29 16:17:19,074 - Veeam_logger - INFO - Copying file C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\mainfolderTest\continentsfolder\continents.txt to C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest\continentsfolder\continents.txt
+2024-06-29 16:17:19,077 - Veeam_logger - INFO - Copying file C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\mainfolderTest\oceansfolder\oceans.txt to C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest\oceansfolder\oceans.txt
+2024-06-29 16:17:19,080 - Veeam_logger - INFO - Copying file C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\mainfolderTest\planetsfolder\planets.txt to C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest\planetsfolder\planets.txt
+2024-06-29 16:17:19,081 - Veeam_logger - INFO - Synchronized C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\mainfolderTest with C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_test\copyfolderTest.
+2024-06-29 16:17:23,779 - Veeam_logger - INFO - Received signal to stop the script.
+2024-07-01 18:28:18,198 - Veeam_logger - INFO - Removing file C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1\random8.txt
+2024-07-01 18:28:18,199 - Veeam_logger - INFO - Removing file C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1\randomtext1.txt
+2024-07-01 18:28:18,200 - Veeam_logger - INFO - Removing file C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1\randomtext2.txt
+2024-07-01 18:28:18,201 - Veeam_logger - INFO - Removing file C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1\randomtext3.txt
+2024-07-01 18:28:18,201 - Veeam_logger - INFO - Removing file C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1\randomtext4.txt
+2024-07-01 18:28:18,202 - Veeam_logger - INFO - Removing file C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1\randomtext5.txt
+2024-07-01 18:28:18,202 - Veeam_logger - INFO - Removing file C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1\randomtext6.txt
+2024-07-01 18:28:18,203 - Veeam_logger - INFO - Removing file C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1\randomtext7.txt
+2024-07-01 18:28:18,203 - Veeam_logger - INFO - Removing file C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1\randomtext8.txt
+2024-07-01 18:28:18,204 - Veeam_logger - INFO - Removing directory C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1\subfolder1
+2024-07-01 18:28:18,205 - Veeam_logger - INFO - Removing directory C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1\subfolder2
+2024-07-01 18:28:18,206 - Veeam_logger - INFO - Removing directory C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1\subfolder3
+2024-07-01 18:28:18,207 - Veeam_logger - INFO - Removing directory C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1\subfolder4
+2024-07-01 18:28:18,207 - Veeam_logger - INFO - Removed files and directories from C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1 that are not in the source folder.
+2024-07-01 18:28:18,208 - Veeam_logger - INFO - Creating directory C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1\.\continentsfolder
+2024-07-01 18:28:18,209 - Veeam_logger - INFO - Creating directory C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1\.\oceansfolder
+2024-07-01 18:28:18,210 - Veeam_logger - INFO - Creating directory C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1\.\planetsfolder
+2024-07-01 18:28:18,213 - Veeam_logger - INFO - Copying file C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\mainfolderTest\continentsfolder\continents.txt to C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1\continentsfolder\continents.txt
+2024-07-01 18:28:18,215 - Veeam_logger - INFO - Copying file C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\mainfolderTest\oceansfolder\oceans.txt to C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1\oceansfolder\oceans.txt
+2024-07-01 18:28:18,217 - Veeam_logger - INFO - Copying file C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\mainfolderTest\planetsfolder\planets.txt to C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1\planetsfolder\planets.txt
+2024-07-01 18:28:18,217 - Veeam_logger - INFO - Synchronized C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\mainfolderTest with C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1.
+2024-07-01 18:28:33,227 - Veeam_logger - INFO - Removing directory C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1\continentsfolder
+2024-07-01 18:28:33,232 - Veeam_logger - INFO - Removing directory C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1\oceansfolder
+2024-07-01 18:28:33,236 - Veeam_logger - INFO - Removing directory C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1\planetsfolder
+2024-07-01 18:28:33,237 - Veeam_logger - INFO - Removed files and directories from C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1 that are not in the source folder.
+2024-07-01 18:28:33,239 - Veeam_logger - INFO - Creating directory C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1\.\continentsfolder
+2024-07-01 18:28:33,241 - Veeam_logger - INFO - Creating directory C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1\.\oceansfolder
+2024-07-01 18:28:33,242 - Veeam_logger - INFO - Creating directory C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1\.\planetsfolder
+2024-07-01 18:28:33,246 - Veeam_logger - INFO - Copying file C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\mainfolderTest\continentsfolder\continents.txt to C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1\continentsfolder\continents.txt
+2024-07-01 18:28:33,250 - Veeam_logger - INFO - Copying file C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\mainfolderTest\oceansfolder\oceans.txt to C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1\oceansfolder\oceans.txt
+2024-07-01 18:28:33,254 - Veeam_logger - INFO - Copying file C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\mainfolderTest\planetsfolder\planets.txt to C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1\planetsfolder\planets.txt
+2024-07-01 18:28:33,254 - Veeam_logger - INFO - Synchronized C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\mainfolderTest with C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1.
+2024-07-01 18:28:48,266 - Veeam_logger - INFO - Removing directory C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1\continentsfolder
+2024-07-01 18:28:48,271 - Veeam_logger - INFO - Removing directory C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1\oceansfolder
+2024-07-01 18:28:48,274 - Veeam_logger - INFO - Removing directory C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1\planetsfolder
+2024-07-01 18:28:48,276 - Veeam_logger - INFO - Removed files and directories from C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1 that are not in the source folder.
+2024-07-01 18:28:48,278 - Veeam_logger - INFO - Creating directory C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1\.\continentsfolder
+2024-07-01 18:28:48,279 - Veeam_logger - INFO - Creating directory C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1\.\oceansfolder
+2024-07-01 18:28:48,280 - Veeam_logger - INFO - Creating directory C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1\.\planetsfolder
+2024-07-01 18:28:48,284 - Veeam_logger - INFO - Copying file C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\mainfolderTest\continentsfolder\continents.txt to C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1\continentsfolder\continents.txt
+2024-07-01 18:28:48,287 - Veeam_logger - INFO - Copying file C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\mainfolderTest\oceansfolder\oceans.txt to C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1\oceansfolder\oceans.txt
+2024-07-01 18:28:48,290 - Veeam_logger - INFO - Copying file C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\mainfolderTest\planetsfolder\planets.txt to C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1\planetsfolder\planets.txt
+2024-07-01 18:28:48,290 - Veeam_logger - INFO - Synchronized C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\mainfolderTest with C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1.
+2024-07-01 18:29:03,297 - Veeam_logger - INFO - Removing directory C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1\continentsfolder
+2024-07-01 18:29:03,301 - Veeam_logger - INFO - Removing directory C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1\oceansfolder
+2024-07-01 18:29:03,303 - Veeam_logger - INFO - Removing directory C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1\planetsfolder
+2024-07-01 18:29:03,304 - Veeam_logger - INFO - Removed files and directories from C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1 that are not in the source folder.
+2024-07-01 18:29:03,308 - Veeam_logger - INFO - Creating directory C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1\.\continentsfolder
+2024-07-01 18:29:03,310 - Veeam_logger - INFO - Creating directory C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1\.\oceansfolder
+2024-07-01 18:29:03,312 - Veeam_logger - INFO - Creating directory C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1\.\planetsfolder
+2024-07-01 18:29:03,315 - Veeam_logger - INFO - Copying file C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\mainfolderTest\continentsfolder\continents.txt to C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1\continentsfolder\continents.txt
+2024-07-01 18:29:03,320 - Veeam_logger - INFO - Copying file C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\mainfolderTest\oceansfolder\oceans.txt to C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1\oceansfolder\oceans.txt
+2024-07-01 18:29:03,324 - Veeam_logger - INFO - Copying file C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\mainfolderTest\planetsfolder\planets.txt to C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1\planetsfolder\planets.txt
+2024-07-01 18:29:03,325 - Veeam_logger - INFO - Synchronized C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\mainfolderTest with C:\Users\Nelso\PycharmProjects\pythonProject1\Veeam_draft\copyfolderTest1.
+2024-07-01 18:29:05,809 - Veeam_logger - INFO - Received signal to stop the script.
