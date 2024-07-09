@@ -5,10 +5,12 @@ import sys
 import logging
 import signal
 import time
+import numpy
+import requests
 
 # Logger definition and configuration to record messages either in console and in a file
 
-def register_setup(log_file):
+def test_register_setup(log_file):
     
     logger = logging.getLogger('Veeam_logger') # created object 'logger' setting up to getlogger method from logging module.
     logger.setLevel(logging.INFO) # Defines the level of the logger to INFO, which means that only messages of this level or higher will be logged.
@@ -34,7 +36,7 @@ def register_setup(log_file):
 
 # function for folder synchronization
 
-def sync_folders(source_folder, replica_folder, logger): # function that receives the source folder, replica folder and logger as parameters
+def test_sync_folders(source_folder, replica_folder, logger): # function that receives the source folder, replica folder and logger as parameters
     # This synchronizes the files and directories of the source folder with the replica folder.
     # Inicializing the source_paths set to store the paths of the source folder.
     source_paths = set() # creates a set of source folder paths
@@ -103,7 +105,7 @@ def sync_folders(source_folder, replica_folder, logger): # function that receive
 
 # function to handle the signal
 
-def signal_handler(sig, frame): # function that receives the signal and frame as parameters
+def test_signal_handler(sig, frame): # function that receives the signal and frame as parameters
     # signal handler to stop the script by pressing Ctrl+C
     logger = logging.getLogger('Veeam_logger') # gets the logger object. It was inside another function previously, so it needs to be called again.
     logger.info("Received signal to stop the script.") # logs the message that the signal to stop the script was received.
@@ -111,7 +113,7 @@ def signal_handler(sig, frame): # function that receives the signal and frame as
 
 # main function to configure arguments and start the synchronization process
 
-def main(): # main function
+def test_main(): # main function
     # main function to synchronize folders periodically
     parser = argparse.ArgumentParser(description='This synchronizes folders periodically') # creates an ArgumentParser object to parse the arguments passed to the script. The description argument is used to define the description of the script.
     parser.add_argument('source_folder', type=str, help='Source folder to synchronize with replica folder') # adds an argument to the parser. The source_folder argument is the source folder to synchronize with the replica folder. The type argument is used to define the type of the argument. The help argument is used to define the help message of the argument.
@@ -128,15 +130,15 @@ def main(): # main function
         os.makedirs(args.replica_folder) # creates the replica folder
         print(f"Created replica folder {args.replica_folder}.") # prints the message that the replica folder was created
 
-    logger = register_setup(args.log_file) # Sets up the logger. creates a logger object by calling the register_setup function passing the log file as argument
-    signal.signal(signal.SIGINT, signal_handler) # sets a handler for the SIGINT (signal interruption) signal. When the signal is received, the signal_handler function is called.
+    logger = test_register_setup(args.log_file) # Sets up the logger. creates a logger object by calling the register_setup function passing the log file as argument
+    signal.signal(signal.SIGINT, test_signal_handler) # sets a handler for the SIGINT (signal interruption) signal. When the signal is received, the signal_handler function is called.
 
     while True: # loops indefinitely. Untill we say to stop the script by sending a signal, using the keyboard shortcut Ctrl+C in the terminal.
-        sync_folders(args.source_folder, args.replica_folder, logger) # calls the sync_folders function passing the source folder, replica folder and logger as arguments
+        test_sync_folders(args.source_folder, args.replica_folder, logger) # calls the sync_folders function passing the source folder, replica folder and logger as arguments
         time.sleep(args.interval) # sleeps the script for the interval time. The interval time is passed as an argument to the script and defined by the user. In the terminal in this case.
 
 if __name__ == '__main__': # checks if the script is being executed as the main program
-    main() # calls the main function that makes everything work
+    test_main() # calls the main function that makes everything work
 
 
 
